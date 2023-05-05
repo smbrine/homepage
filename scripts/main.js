@@ -17,3 +17,19 @@ for (const card of document.querySelectorAll(".codeblock")) {
 for (const tile of document.querySelectorAll(".link-tile")) {
     tile.onmousemove = e => handleOnMouseMove(e);
 }
+
+
+const submitButton = document.getElementById('submit-button');
+submitButton.addEventListener('click', login);
+
+function login() {
+    const idInput = document.getElementById('id-input').value;
+    console.log(idInput)
+    if (idInput == "1") {
+        
+    } else if (idInput == "2") {
+
+    } else if (idInput == "3") {
+
+    }
+}

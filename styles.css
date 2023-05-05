@@ -25,7 +25,7 @@ a {
     margin: 0;
     width: 100vw;
     height: 10vh;
-    background-image: linear-gradient(to left, #002aff, #fc02a01c);
+    background-image: linear-gradient(to left, #3e129e, #fc02a01c);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     padding-top: 5vh;
@@ -35,6 +35,8 @@ a {
     z-index: 10;
 }
 
+
+
 .header ul {
     color: transparent;
     list-style-type: none;
@@ -42,7 +44,7 @@ a {
     width: 100vw;
     padding: 0;
     margin: 0;
-    min-width: 370px;
+    min-width: 380px;
 }
 
 .header li {
@@ -64,6 +66,15 @@ a {
 }
 
 @media only screen and (min-width: 550px) {
+
+    .phind-logo {
+        transform: translateX(-6%) scale(0.7);
+    }
+
+    .link-tile {
+        
+        inline-size: 30vh;
+    }
 
     .header img {
         filter: brightness(75%) blur(1px);
@@ -99,14 +110,43 @@ a {
 
 }
 
-@media only screen and (orientation: portrait) or (max-width: 1500){
-    .codeblocks {
-        padding-left: 0vw;
-        padding-right: 0;
-        padding-bottom: 20vh;
+@media (max-width: 550px) {
+    .link-tile {
+        
+        inline-size: 20vh;
+
+    }
+    .phind-logo {
+        transform: translateX(-21%) scale(0.5);
     }
 }
 
+.id-system {
+    padding-bottom: 5%;
+    padding-left: 2%;
+    /* margin-top: -3vh; */
+    /* width: 2%; */
+}
+
+.id-system input {
+    width: 5vw;
+    background-color: grey;
+    border-radius: 10px;
+    stroke: none;
+    border: 0;
+
+}
+.id-system label {
+    color: aliceblue;
+}
+
+.id-system button {
+    color: aliceblue;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+}
 
 .searchline {
     width: 90vw;
@@ -126,7 +166,6 @@ a {
 }
 
 .phind-logo {
-    transform: translateX(-6%) scale(0.7);
     /* width: calc((var(--height) * 4)); */
     height: calc((var(--height) * 2));
     -webkit-filter: invert();
@@ -137,7 +176,7 @@ a {
 .wrapper {
     background-color: rgb(15, 15, 15);
     color: aliceblue;
-    padding-top: 25vh;
+    padding-top: 20vh;
     width: 100vw;
     height: 100%;
 }
@@ -229,7 +268,6 @@ a {
     cursor: pointer;
     position: relative;
     text-align: center;
-    inline-size: 30vh;
     font-size: min(2vw, 14px);
     flex-wrap: wrap;
     word-wrap: normal;
