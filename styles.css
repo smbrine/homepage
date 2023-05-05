@@ -5,8 +5,8 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    background-color: linear-gradient(to left, rgb(0, 42, 255), rgb(252, 2, 160));
-    background-color: rgb(113, 20, 187);
+    /* background-color: linear-gradient(to left, rgb(0, 42, 255), rgb(252, 2, 160)); */
+    background-color: rgb(126, 8, 127);
 }
 
 a {
@@ -25,7 +25,7 @@ a {
     margin: 0;
     width: 100vw;
     height: 10vh;
-    background-image: linear-gradient(to left, #3e129e, #fc02a01c);
+    background-image: linear-gradient(to left, rgb(62, 18, 158), rgba(252, 2, 160, 0.11));
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     padding-top: 5vh;
