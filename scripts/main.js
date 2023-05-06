@@ -22,14 +22,50 @@ for (const tile of document.querySelectorAll(".link-tile")) {
 const submitButton = document.getElementById('submit-button');
 submitButton.addEventListener('click', login);
 
+var idInput = document.getElementById('id-input');
+
+var choice = localStorage.getItem(idInput.value)
+
 function login() {
-    const idInput = document.getElementById('id-input').value;
-    console.log(idInput)
-    if (idInput == "1") {
-        
-    } else if (idInput == "2") {
+    const div_1 = document.querySelector('.block-1');
+    const div_2 = document.querySelector('.block-2');
+    const div_3 = document.querySelector('.block-3');
 
-    } else if (idInput == "3") {
+    if (!div_1.hasAttribute('hidden')) {
+        div_1.setAttribute('hidden', '');
+    }
 
+    if (!div_2.hasAttribute('hidden')) {
+        div_2.setAttribute('hidden', '');
+    }
+
+    if (div_3.hasAttribute('hidden')) {
+        div_3.setAttribute('hidden', '');
+    }
+
+    localStorage.setItem('preference', idInput.value);
+
+    if (idInput.value == "1") {
+        div_1.removeAttribute('hidden');
+    } else if (idInput.value == "2") {
+        div_2.removeAttribute('hidden');
+    } else if (idInput.value == "3") {
+        div_3.removeAttribute('hidden');
     }
 }
+
+window.onload = function() {
+    console.log('Executed');
+    var userId = '1';
+    const preference = localStorage.getItem('preference');
+    if (preference !== null) {
+        userId = preference;
+    }
+    idInput.value = userId;
+
+    const preload = document.querySelector('.preload');
+          preload.setAttribute('hidden', '');
+          
+    login();
+};
+
