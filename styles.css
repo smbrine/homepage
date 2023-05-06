@@ -124,8 +124,6 @@ a {
 .id-system {
     padding-bottom: 5%;
     padding-left: 2%;
-    /* margin-top: -3vh; */
-    /* width: 2%; */
 }
 
 .id-system input {
@@ -166,7 +164,6 @@ a {
 }
 
 .phind-logo {
-    /* width: calc((var(--height) * 4)); */
     height: calc((var(--height) * 2));
     -webkit-filter: invert();
     filter: invert();
@@ -245,12 +242,10 @@ a {
 .link-tiles {
     justify-content: center;
     padding: 10%;
-    /* padding-top: 16vh; */
     padding-left: 5vw;
     padding-right: 5vw;
     display: flex;
     flex-wrap: wrap;
-    /* gap: min(calc(1vw + 1vh), 8px); */
     gap: 10px;
     width: calc(100%-20px);
     transition: filter 300ms;
