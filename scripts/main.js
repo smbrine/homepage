@@ -31,6 +31,14 @@ function login() {
     const div_2 = document.querySelector('.block-2');
     const div_3 = document.querySelector('.block-3');
 
+    for (const card of document.querySelectorAll(".codeblock")) {
+        card.onmousemove = e => handleOnMouseMove(e);
+    }
+    
+    for (const tile of document.querySelectorAll(".link-tile")) {
+        tile.onmousemove = e => handleOnMouseMove(e);
+    }
+
     if (!div_1.hasAttribute('hidden')) {
         div_1.setAttribute('hidden', '');
     }
