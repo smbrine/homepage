@@ -47,7 +47,7 @@ function login() {
         div_2.setAttribute('hidden', '');
     }
 
-    if (div_3.hasAttribute('hidden')) {
+    if (!div_3.hasAttribute('hidden')) {
         div_3.setAttribute('hidden', '');
     }
 
